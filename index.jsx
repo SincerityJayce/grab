@@ -12,6 +12,7 @@ export const useGrabbed = create((set) => {
 //////
 export const {grab, release} = useGrabbed.getState()
 export const useAmIGrabbed = (id) => useGrabbed(s => s.card==id)
-
+export function grabbedItem(){return useGrabbed.getState().card
+export function useGrabbedItem(){return useGrabbed(s=>s.card)
 
 
